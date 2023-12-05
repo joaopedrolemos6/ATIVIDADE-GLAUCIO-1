@@ -1,0 +1,132 @@
+body {
+    font-family: "Fraunces", serif;
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .card {
+    border-radius: 10px;
+    display: flex;
+    max-width: 666px;
+    background-color: white;
+    margin: 0 1rem;
+  }
+  
+  .img_container {
+    width: 50%;
+  }
+  
+  .img_container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .detalhe_container {
+    width: 50%;
+    padding: 2rem;
+  }
+  
+  .detalhe_container .name {
+    color: hsl(212, 21%, 14%);
+    padding-right: 2rem;
+    margin-bottom: 1.75rem;
+  }
+  
+  .detalhe_container .description {
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    line-height: 22px;
+    margin-bottom: 1.75rem;
+  }
+  
+  .perfume {
+    font-family: "Montserrat";
+    letter-spacing: 3px;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 1.75rem;
+  }
+  
+  .preco_container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.75rem;
+  }
+  
+  .preco_container .preco_atual {
+    color: hsl(158, 36%, 37%);
+  }
+  
+  .preco_container .preco_antigo {
+    font-family: "Montserrat";
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+  }
+  
+  .detalhe_container .btn {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: "Montserrat";
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .detalhe_container .btn:hover {
+    background-color: hsl(212, 21%, 14%);
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .card {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .img_container {
+      width: 100%;
+      height: 40%;
+    }
+  
+    .img_container img {
+      content: url("./images/image-product-mobile.jpg");
+    }
+  
+    .card {
+      flex-direction: column;
+    }
+  
+    .detalhe_container {
+      width: 100%;
+    }
+  
+    .detalhe_container .nome {
+      padding-right: 0;
+    }
+  
+    .img_container img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 0px;
+    }
+  }
